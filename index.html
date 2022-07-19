@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
+    <title>Document</title>
+</head>
+<body>
+    <header>
+        <div>
+            <button onclick="showChronometer()">chronometer</button>
+            <button onclick="showTimer()">timer</button>
+        </div>
+    </header>
+    <main>
+        <section class="chronometer-section">
+            <div class="chronometer-container containers">
+                <h2>Chronometer</h2>
+                <article class="">
+                    <p><span id="minutesChr">00</span>:<span id="secondsChr">00</span>:<span id="microSecondsChr">00</span></p>
+                    <div>
+                        <button onclick="playChronometer()" class="play-button"><i class="fa-solid fa-play"></i></button>
+                        <button onclick="resetChronometer()"><i class="fa-solid fa-arrow-rotate-left"></i></button>
+                    </div>
+                </article>
+            </div>
+        </section>
+        <section class="timer-section">
+            <div class="timer-container containers">
+                <h2>Timer</h2>
+                <article>
+                    <p id="display_clock"><span id="minutesTimerS">00</span>:<span id="secondsTimerS">00</span></p>
+                    <form onsubmit="startTimer()">
+                        <input type="number" placeholder="minutes" id="minutesInput" name="minutesInout" class="Inputs">
+                        <input type="number" placeholder="seconds" id="secondsInput" name="secondsInput" class="Inputs">
+                        <div class="timer-button-container">
+                            <button type="submit" id="setBtn">Set Timer</button>
+                            <button type="button" id="play/pauseBtn" class="play-button"><i class="fa-solid fa-play"></i></button>
+                            <button type="reset" id="resetBtn"><i class="fa-solid fa-arrow-rotate-left"></i></button>
+                        </div>
+                    </form>
+                </article>
+            </div>
+        </section>
+    </main>
+    <script src="https://kit.fontawesome.com/076a6d24e0.js" crossorigin="anonymous"></script>
+    <script src="main.js"></script>
+</body>
+</html>

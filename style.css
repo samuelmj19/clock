@@ -1,0 +1,64 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+body{
+    background-color: rgb(24, 24, 24);
+    background-image: url('./img/tiempo_1280x720_xtrafondos.com.jpg');
+    color: #b9b9b9d1;
+}
+header div{
+    display: flex;
+    justify-content: space-around;
+    margin-top: 30px;
+}
+button{
+    padding: 10px;
+    border-radius: 8px;
+    cursor: pointer;
+    background-color: #08080879;
+    color: #b9b9b9d1;
+    border: solid 2px #878787c3;
+}
+button:hover{
+    background-color: #3e51ddc7;
+}
+.containers{
+    display: flex;
+    width: 300px;
+    height: 200px;
+    background-color: #171f3840;
+    flex-direction: column;
+    border-radius: 8px;
+    margin: 100px auto;
+    align-items: center;
+    justify-content: center;
+    padding: 10px;
+    border: solid 2px #878787c3;
+    text-align: center;
+    box-shadow: 2px 3px 20px 4px #00000079;
+}
+.timer-section{
+    display: none;
+}
+article p{
+    font-size: 32px;
+}
+.play-button{
+    width: 50px;
+    height: 50px;
+    border-radius: 50%;
+    font-size: 1.6rem;
+    padding-left: 13px;
+}
+.Inputs{
+    width: 100px;
+    height: 40px;
+    padding: 0 5px; 
+    background-color: #08080879;
+    border: none;
+    border: solid 2px #000;
+    border-radius: 8px ;
+    outline: none;
+}
